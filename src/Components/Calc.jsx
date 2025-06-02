@@ -28,10 +28,11 @@ export default function Calc() {
             </div>
             {/* TERM & RATE */}
 
+            {/* Mortgage type */}
             <div>
                 <div className="flex flex-col">
                     <label htmlFor="amnt" className="text-white mb-4">Mortgage Type</label>
-                    <div className="flex gap-2 items-center">
+                    <div className="flex gap-2 items-center bg-red-500 mb-6 p-2">
                         <input
                             type="radio"
                             id="repayment"
@@ -42,7 +43,7 @@ export default function Calc() {
                         <label htmlFor="repayment" className="text-gray-700">Repayment</label>
                     </div>
 
-                    <div className="flex gap-2 items-center">
+                    <div className="flex gap-2 items-center bg-red-500 p-2 ">
                         <input
                             type="radio"
                             id="intrest"
@@ -54,8 +55,10 @@ export default function Calc() {
                     </div>
                 </div>
             </div>
+            {/* Mortgage type */}
 
 
+            <button className="bg-green-700 p-3 mt-4 w-full rounded-2xl">Calculate Repayments</button>
 
         </div >
     );
